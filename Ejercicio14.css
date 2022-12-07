@@ -1,0 +1,35 @@
+
+/**
+    especifidad (0,0,1)
+**/
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+
+}
+/**
+    especifidad (0,0,1)
+**/
+h1 {
+    font-size: 2em;
+    align-self: center;
+    background-color: darkgrey;
+    width: max-content;
+    padding: 2em;
+    border-radius: 0.75em;
+    border: solid black 2px;
+    margin: 0em;
+    grid-column: 1/ span 5;
+}
+/**
+    especifidad (0,0,1)
+**/
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+input{
+    margin:2em;
+}

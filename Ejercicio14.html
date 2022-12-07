@@ -1,0 +1,38 @@
+<!DOCTYPE HTML><!--Indica que el siguiente documento es HTML-->
+
+<html lang="es"><!--Indica que esta escrito en castellano-->
+<head><!--Indica especificaciones del archivo-->
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Ejercicio14</title>
+    <!--Metadato-->
+    <!--Metadatos de los documentos HTML5-->
+    <meta name ="author" content ="Adrián Vega" />
+    <meta name ="description" content ="Ejercicio 14" />
+    <meta name ="keywords" content ="api,javascript,jquery,file" />
+    <!--Añadimos ventana grafica-->
+    <!--Definición de la ventana gráfica-->
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="Ejercicio14.css" />   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio14.js"></script>
+</head>
+<body onload="ej14.contarVeces();">
+    <h1>Ejercicio 14</h1>
+    <p>Ejercicio que muestra ubicación del usuario e interactua con el portapapeles</p>
+    <p>Guardar valor guarda el campo de texto en la memoria</p>
+    <p>Copiar valor copia el valor de la memoria</p>
+    <p>Borrar borra los datos de la memoria</p>
+    <form>
+        <label for="guardar">Texto a guardar</label>
+        <input type="text" id="guardar" name="texto a guardar">
+        <input type="button" value="guardar" onclick="ej14.guardar();">
+        <input type="button" value="copiar valor" onclick="ej14.copiarGuardado();">
+        <input type="button" value="copiar coordenadas" onclick="ej14.copiarCoordenadas();">
+        <input type="button" value="Poner pantalla completa" onclick="ej14.pantallaCompleta();">
+        <input type="button" value="Borrar" onclick="ej14.borrar();">
+    </form>
+    <main></main>
+</body>
+</html>
